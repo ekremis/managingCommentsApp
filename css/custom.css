@@ -1,0 +1,107 @@
+html, input, button, textarea { font-family: 'Josefin Sans', sans-serif; }
+
+textarea { font-size:14px; border: none; padding:4px; }
+
+textarea:disabled {
+    background: #f6f6f6;
+}
+	
+input { color:#666;}
+
+button { font-size:10px;}
+
+h3 { display:inline-block; color: #6b6b6b; letter-spacing: 0.5px;}
+
+.faclass1 { font-size: 26px!important; margin-left:30px; margin-top: 15px;}
+
+.faclass2 { font-size: 26px!important; margin-right:30px; margin-top: 15px;}
+
+.imgclass { 
+display: inline-table;
+vertical-align: middle;
+margin-right: 30px; }
+
+.commentOutter {
+width: 100%;
+border: 1px #F7F7F7 red;
+background-color: white;
+padding:90px 0px; }
+
+.topmenu {
+background-color:#1e89d1;
+position:absolute;
+top:0px;
+height:60px;
+width:100%; }
+
+.banner1 {
+background-color:#2f9ae0;
+height:200px;
+width:100%;
+position:absolute;
+top:60px; }
+
+.commentInner {
+width: 80%;
+border: 1px #F7F7F7 solid;
+margin: 0 auto;
+background-color: #FFF;
+position:relative;
+top:30px; }
+
+.commentInner2 { padding: 0px 20px;}
+
+.searchform {
+margin-bottom: 15px; 
+float:right; }
+
+.title {
+background-color: #f1f1f1;
+padding:5px 20px;
+margin-bottom:15px; }
+
+.footerinput {
+margin-top:30px;
+padding: 15px 15px;
+background-color: #f1f1f1; }
+
+.status { font-size:9px; color: #AEADAD; margin-left:4px; }
+
+.inputclass {
+display: block;
+margin-top: 8px; }
+
+table td:nth-child(2) {
+padding-left:20px; }
+
+table td:last-child {
+padding-left:20px;
+padding-top:18px;
+color: #C5C5C5; }
+
+table tr { height:100px; }
+
+.tdborder { border-bottom: 1px solid #efefef; } 
+
+.date {
+margin-bottom:25px;
+border-bottom:1px solid #EDEDED; }
+
+.filterbutton {
+background-color: #69c735;
+border: none;
+color: white;
+padding: 3px 15px;
+font-size: 14px; }
+
+.sendbutton {
+background-color: #5995d8;
+border: none;
+color: white;
+padding: 10px 25px;
+margin-left:5px;
+font-size: 14px; }
+
+.addcomment {
+height:30px;
+font-size:14px; }

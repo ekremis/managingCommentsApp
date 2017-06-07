@@ -1,0 +1,57 @@
+<div class="commentOutter" ng-controller="commentCtrl">
+
+  <!-- fontawesome icons for top menu -->
+  <!-- top menu -->
+  <div class="topmenu">
+    <div style="float:left; margin-left: 8%;">
+      <i style="color:#FFF;" class="fa fa-users faclass1" aria-hidden="true"></i>
+      <i class="fa fa-bars faclass1" aria-hidden="true"></i>
+      <i class="fa fa-search faclass1" aria-hidden="true"></i>
+    </div>
+
+    <div style="float:right; margin-right: 8%;">
+      <i class="fa fa-calendar faclass2" aria-hidden="true"></i>
+      <i class="fa fa-envelope-o faclass2" aria-hidden="true"></i>
+      <span class="imgclass"><img style="" src="http://www.waftdesign.gr/apps/messageapp/images/alex.png" height="50" width="50" /></span>
+    </div>
+
+  </div>
+  <div class="banner1"></div>
+
+  <div class="commentInner">
+
+      <!-- title and user status header -->
+      <div class="title"><h3>Alex Mortinger</h3> <img style="margin-left:10px;" src="http://www.waftdesign.gr/apps/messageapp/images/green.png" width:"8" height="8" /><span class="status">ONLINE</span></div>
+
+      <div class="commentInner2">        
+
+        <div class="date">26 June 2014</div>
+
+        <!-- filter/search by word -->
+        <form class="searchform">
+            <input type="text" ng-model="search" class="" placeholder="Search"> <button type="button" class="filterbutton" ng-click="reset()">Clear filter</button>
+        </form>  
+
+        <!-- using angular ng-repeat to show all comments in a table -->
+        <table>
+          <tr ng-repeat='comment in comments|filter:search' ng-class=''>
+            <td><img ng-src="http://www.waftdesign.gr/apps/messageapp/images/{{comment.image}}" width="70" height="70" /></td>
+            <td class="tdborder">
+              <b>{{comment.name}}</b>
+              <textarea ng-model="comment.comment" name="" value="" id="comment{{$index}}" class="inputclass" maxlength="" ng-disabled="comment.timelocked" cols="70" rows="2"></textarea>
+            </td>
+            <td class="tdborder">{{comment.publishedOn}}</td>
+          </tr>  
+        </table>
+
+      </div>        
+
+        <div class="footerinput">
+          <input type="text" ng-model="newComment.comment" placeholder="Start typing your message..." name="" id="" class="addcomment" maxlength="" size="100"/> <button class="sendbutton" ng-click="addComment()">SEND</button>
+        </div>
+
+  </div>
+
+</div>
+
+
